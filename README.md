@@ -18,6 +18,8 @@ All the formalities which I mentioned, and others, I will take care of later, bu
 
 **USAGE**
 
+Make sure you have Maven and Java 1.8+ installed.
+
 **Populate the config.properties file**
 
 Example:
