@@ -23,8 +23,11 @@ All the formalities which I mentioned, and others, I will take care of later, bu
 Example:
 
 url = https://www.pdfsaresocool/pdfcollection/thecoolestcontent-#-goodstuff.pdf
+
 min = 1
+
 max = 1000
+
 numberOfDigits = 4                    
 
 Notes:
