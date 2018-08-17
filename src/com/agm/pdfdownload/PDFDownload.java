@@ -27,11 +27,12 @@ public class PDFDownload {
             String urlStart = urlParts[0];
             String urlFinish = urlParts[1];
 
-            String decimalFormat = "";
+            String decimalFormatString = "";
 
             for (int i = 0; i < Integer.valueOf(numberOfDigitsPropertyValue); i++) {
-                decimalFormat += "0";
+                decimalFormatString += "0";
             }
+            DecimalFormat decimalFormat = new DecimalFormat(decimalFormatString);
 
             File outputDirectory = new File("pdf");
             if (outputDirectory.exists()) {
@@ -55,7 +56,7 @@ public class PDFDownload {
 
             for (int index = Integer.valueOf(minPropertyValue); index <= Integer.valueOf(maxPropertyValue); index++) {
                 try {
-                    urlString = urlStart + index + urlFinish;
+                    urlString = urlStart + decimalFormat.format(index) + urlFinish;
                     System.out.println("The URL String is " + urlString);
                     responseCode = getResponseCode(urlString);
 
