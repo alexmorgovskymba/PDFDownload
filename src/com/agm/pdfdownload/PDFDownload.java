@@ -23,8 +23,6 @@ public class PDFDownload {
             String maxPropertyValue = properties.getProperty("max");
             String numberOfDigitsPropertyValue = properties.getProperty("numberOfDigits");
 
-            //https://www.missoulapubliclibrary.org/ftp/LinuxJournal-###.pdf
-
             String[] urlParts = urlPropertyValue.split("#");
             String urlStart = urlParts[0];
             String urlFinish = urlParts[1];
@@ -41,8 +39,6 @@ public class PDFDownload {
             }
             outputDirectory.mkdir();
             String fullOutputPathString;
-
-            DecimalFormat monthFormat = new DecimalFormat(decimalFormat);
 
             String urlString;
             URL url;
