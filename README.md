@@ -25,8 +25,11 @@ Make sure you have Maven and Java 1.8+ installed.
 Example:
 
 url = https://www.pdfsaresocool/pdfcollection/thecoolestcontent-#-goodstuff.pdf
+
 min = 1
+
 max = 1000
+
 numberOfDigits = 4                    
 
 Notes:
